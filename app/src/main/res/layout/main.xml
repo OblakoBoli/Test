@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:id="@+id/textQuest"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_alignBottom="@+id/radioButtonKvadrat"
+        android:layout_alignParentStart="true">
+
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rBTreug"
+        android:id="@+id/radioButtonTreug"
+        android:checked="false"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="33dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rBKrug"
+            android:id="@+id/radioButtonKrug"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rBPryam"
+            android:id="@+id/radioButtonPryam"
+            android:checked="false"
+            android:layout_marginTop="29dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rBKvadrat"
+            android:id="@+id/radioButtonKvadrat"
+            android:checked="false" />
+
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttAnswer"
+        android:id="@+id/buttonAnswer"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/buttonAnswer"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonAnswer"
+        android:inputType="text" />
+
+
+
+
+</RelativeLayout>
